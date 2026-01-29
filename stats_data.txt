@@ -1,0 +1,238 @@
+
+% ---------------------------------------------------------
+% 1. TASK PERFORMANCE (Bayesian Model Results)
+% ---------------------------------------------------------
+
+% --- Fixed Parameters (Table 1 & Text) ---
+\newcommand{\bayesBaseMean}{66.61}
+\newcommand{\bayesBaseHDILow}{62.14}
+\newcommand{\bayesBaseHDIHigh}{71.20}
+\newcommand{\bayesBaseHDI}{[62.14, 71.20]}
+
+\newcommand{\bayesSessionMean}{0.17}
+\newcommand{\bayesSessionHDILow}{-0.31}
+\newcommand{\bayesSessionHDIHigh}{0.66}
+\newcommand{\bayesSessionHDI}{[-0.31, 0.66]}
+
+\newcommand{\bayesSubjBaseSD}{6.94}
+\newcommand{\bayesSubjBaseHDILow}{4.21}
+\newcommand{\bayesSubjBaseHDIHigh}{9.94}
+\newcommand{\bayesSubjBaseHDI}{[4.21, 9.94]}
+
+% --- Dose-Time Estimates (Table 1) ---
+% Naming convention: \bayes[Dose]Mg[Time]h[Metric]
+
+% 5 mg
+\newcommand{\bayesFiveMgOneFiveMean}{1.33}
+\newcommand{\bayesFiveMgOneFiveHDI}{[-1.83, 4.59]}
+\newcommand{\bayesFiveMgOneFiveSD}{0.76}
+\newcommand{\bayesFiveMgOneFiveSDHDI}{[0.00, 1.84]}
+
+\newcommand{\bayesFiveMgThreeZeroMean}{0.87}
+\newcommand{\bayesFiveMgThreeZeroHDI}{[-2.23, 4.17]}
+\newcommand{\bayesFiveMgThreeZeroSD}{0.80}
+\newcommand{\bayesFiveMgThreeZeroSDHDI}{[0.00, 1.99]}
+
+\newcommand{\bayesFiveMgFourFiveMean}{2.68}
+\newcommand{\bayesFiveMgFourFiveHDILow}{-0.56} % Broken out for text usage
+\newcommand{\bayesFiveMgFourFiveHDIHigh}{5.97}
+\newcommand{\bayesFiveMgFourFiveHDI}{[-0.56, 5.97]}
+\newcommand{\bayesFiveMgFourFiveSD}{0.79}
+\newcommand{\bayesFiveMgFourFiveSDHDI}{[0.00, 1.92]}
+
+% 10 mg
+\newcommand{\bayesTenMgOneFiveMean}{-2.08}
+\newcommand{\bayesTenMgOneFiveHDI}{[-4.91, 0.76]}
+\newcommand{\bayesTenMgOneFiveSD}{0.80}
+\newcommand{\bayesTenMgOneFiveSDHDI}{[0.00, 1.98]}
+
+\newcommand{\bayesTenMgThreeZeroMean}{-0.66}
+\newcommand{\bayesTenMgThreeZeroHDI}{[-3.45, 2.15]}
+\newcommand{\bayesTenMgThreeZeroSD}{0.84}
+\newcommand{\bayesTenMgThreeZeroSDHDI}{[0.00, 2.03]}
+
+\newcommand{\bayesTenMgFourFiveMean}{2.47}
+\newcommand{\bayesTenMgFourFiveHDI}{[-0.45, 5.25]}
+\newcommand{\bayesTenMgFourFiveSD}{0.84}
+\newcommand{\bayesTenMgFourFiveSDHDI}{[0.00, 2.07]}
+
+% 15 mg
+\newcommand{\bayesFifteenMgOneFiveMean}{-0.94}
+\newcommand{\bayesFifteenMgOneFiveHDI}{[-3.56, 1.89]}
+\newcommand{\bayesFifteenMgOneFiveSD}{0.81}
+\newcommand{\bayesFifteenMgOneFiveSDHDI}{[0.00, 1.92]}
+
+\newcommand{\bayesFifteenMgThreeZeroMean}{-0.22}
+\newcommand{\bayesFifteenMgThreeZeroHDI}{[-3.03, 2.63]}
+\newcommand{\bayesFifteenMgThreeZeroSD}{0.77}
+\newcommand{\bayesFifteenMgThreeZeroSDHDI}{[0.00, 1.82]}
+
+\newcommand{\bayesFifteenMgFourFiveMean}{1.83}
+\newcommand{\bayesFifteenMgFourFiveHDI}{[-1.10, 4.62]}
+\newcommand{\bayesFifteenMgFourFiveSD}{0.77}
+\newcommand{\bayesFifteenMgFourFiveSDHDI}{[0.00, 1.80]}
+
+% 20 mg
+\newcommand{\bayesTwentyMgOneFiveMean}{-2.27}
+\newcommand{\bayesTwentyMgOneFiveHDI}{[-5.57, 0.91]}
+\newcommand{\bayesTwentyMgOneFiveSD}{0.86}
+\newcommand{\bayesTwentyMgOneFiveSDHDI}{[0.00, 2.01]}
+
+\newcommand{\bayesTwentyMgThreeZeroMean}{-1.14}
+\newcommand{\bayesTwentyMgThreeZeroHDI}{[-4.37, 2.10]}
+\newcommand{\bayesTwentyMgThreeZeroSD}{0.80}
+\newcommand{\bayesTwentyMgThreeZeroSDHDI}{[0.00, 1.85]}
+
+\newcommand{\bayesTwentyMgFourFiveMean}{1.19}
+\newcommand{\bayesTwentyMgFourFiveHDI}{[-1.97, 4.31]}
+\newcommand{\bayesTwentyMgFourFiveSD}{0.83}
+\newcommand{\bayesTwentyMgFourFiveSDHDI}{[0.00, 1.96]}
+
+% --- Variability Range (Text) ---
+\newcommand{\bayesVarRangeLow}{0.76}
+\newcommand{\bayesVarRangeHigh}{0.86}
+
+% ---------------------------------------------------------
+% 2. KINEMATICS
+% ---------------------------------------------------------
+\newcommand{\SmoothnessVariabilityBelowOne}{91.6}
+
+% ---------------------------------------------------------
+% 3. DIMENSIONALITY & COMPLEXITY (Table 2 & Text)
+
+% --- Auto-generated Dimensionality Vars ---
+\newcommand{\dimAllPRDiffPostHDIHighHand}{0.46}
+\newcommand{\dimAllPRDiffPostHDILowHand}{0.01}
+\newcommand{\dimAllPRDiffPostHand}{0.24}
+\newcommand{\dimAllPRPctInRope}{73.01}
+\newcommand{\dimAllPRPctInRopeHand}{10.44}
+\newcommand{\dimAllVAFPctInZone}{99.44}
+\newcommand{\dimAllVAFPctInZoneHand}{98.95}
+\newcommand{\dimAllVAFPostHDIHighHand}{0.96}
+\newcommand{\dimAllVAFPostHDILowHand}{0.91}
+\newcommand{\dimAllVAFPostHand}{0.94}
+\newcommand{\dimFifteenPRDiffPostHDIHighHand}{0.38}
+\newcommand{\dimFifteenPRDiffPostHDILowHand}{-0.12}
+\newcommand{\dimFifteenPRDiffPostHand}{0.11}
+\newcommand{\dimFifteenPRPctInRope}{53.84}
+\newcommand{\dimFifteenPRPctInRopeHand}{46.59}
+\newcommand{\dimFifteenVAFPctInZone}{99.78}
+\newcommand{\dimFifteenVAFPctInZoneHand}{91.53}
+\newcommand{\dimFifteenVAFPostHDIHighHand}{0.96}
+\newcommand{\dimFifteenVAFPostHDILowHand}{0.88}
+\newcommand{\dimFifteenVAFPostHand}{0.93}
+\newcommand{\dimTwentyPRDiffPostHDIHighHand}{0.64}
+\newcommand{\dimTwentyPRDiffPostHDILowHand}{0.09}
+\newcommand{\dimTwentyPRDiffPostHand}{0.40}
+\newcommand{\dimTwentyPRPctInRope}{55.71}
+\newcommand{\dimTwentyPRPctInRopeHand}{2.34}
+\newcommand{\dimTwentyVAFPctInZone}{88.09}
+\newcommand{\dimTwentyVAFPctInZoneHand}{97.21}
+\newcommand{\dimTwentyVAFPostHDIHighHand}{0.96}
+\newcommand{\dimTwentyVAFPostHDILowHand}{0.90}
+\newcommand{\dimTwentyVAFPostHand}{0.94}
+
+% --- Auto-generated Dimensionality Vars ---
+\newcommand{\dimAllAR}{1.16}
+\newcommand{\dimAllARHand}{1.58}
+\newcommand{\dimAllKHand}{4}
+\newcommand{\dimAllPRBaseHand}{2.02}
+\newcommand{\dimAllPRDiffHand}{0.23}
+\newcommand{\dimAllPRDiffPost}{0.02}
+\newcommand{\dimAllPRDiffPostHDIHigh}{0.21}
+\newcommand{\dimAllPRDiffPostHDILow}{-0.16}
+\newcommand{\dimAllPRDoseHand}{2.25}
+\newcommand{\dimAllREHand}{2.72}
+\newcommand{\dimAllRMSIPHand}{0.93}
+\newcommand{\dimAllVAF}{0.94}
+\newcommand{\dimAllVAFHand}{0.92}
+\newcommand{\dimAllVAFPost}{0.97}
+\newcommand{\dimAllVAFPostHDIHigh}{0.99}
+\newcommand{\dimAllVAFPostHDILow}{0.92}
+\newcommand{\dimFifteenAR}{1.11}
+\newcommand{\dimFifteenARHand}{1.31}
+\newcommand{\dimFifteenKHand}{4}
+\newcommand{\dimFifteenPRBaseHand}{1.98}
+\newcommand{\dimFifteenPRDiffHand}{0.15}
+\newcommand{\dimFifteenPRDiffPost}{-0.02}
+\newcommand{\dimFifteenPRDiffPostHDIHigh}{0.26}
+\newcommand{\dimFifteenPRDiffPostHDILow}{-0.30}
+\newcommand{\dimFifteenPRDoseHand}{2.13}
+\newcommand{\dimFifteenREHand}{2.93}
+\newcommand{\dimFifteenRMSIPHand}{0.92}
+\newcommand{\dimFifteenVAF}{0.96}
+\newcommand{\dimFifteenVAFHand}{0.92}
+\newcommand{\dimFifteenVAFPost}{0.98}
+\newcommand{\dimFifteenVAFPostHDIHigh}{0.99}
+\newcommand{\dimFifteenVAFPostHDILow}{0.96}
+\newcommand{\dimRopeVAFHigh}{1.00}
+\newcommand{\dimRopeVAFLow}{0.90}
+\newcommand{\dimTwentyAR}{1.22}
+\newcommand{\dimTwentyARHand}{1.84}
+\newcommand{\dimTwentyKHand}{4}
+\newcommand{\dimTwentyPRBaseHand}{2.06}
+\newcommand{\dimTwentyPRDiffHand}{0.31}
+\newcommand{\dimTwentyPRDiffPost}{0.06}
+\newcommand{\dimTwentyPRDiffPostHDIHigh}{0.32}
+\newcommand{\dimTwentyPRDiffPostHDILow}{-0.21}
+\newcommand{\dimTwentyPRDoseHand}{2.36}
+\newcommand{\dimTwentyREHand}{2.51}
+\newcommand{\dimTwentyRMSIPHand}{0.95}
+\newcommand{\dimTwentyVAF}{0.93}
+\newcommand{\dimTwentyVAFHand}{0.92}
+\newcommand{\dimTwentyVAFPost}{0.93}
+\newcommand{\dimTwentyVAFPostHDIHigh}{0.98}
+\newcommand{\dimTwentyVAFPostHDILow}{0.85}
+% ---------------------------------------------------------
+
+% --- General Params ---
+\newcommand{\dimRMSIP}{0.95}
+\newcommand{\dimRopePRLow}{-0.10}
+\newcommand{\dimRopePRHigh}{0.10}
+\newcommand{\dimRopeRELow}{-0.95}
+\newcommand{\dimRopeREHigh}{1.05}
+\newcommand{\dimPercentInRope}{73.01}
+
+% --- Table 2 Columns ---
+
+% 15 mg Group
+\newcommand{\dimFifteenPRBase}{1.52}
+\newcommand{\dimFifteenPRDose}{1.49}
+\newcommand{\dimFifteenPRDiff}{-0.03}
+\newcommand{\dimFifteenRE}{5.67}
+\newcommand{\dimFifteenRMSIP}{0.96}
+\newcommand{\dimFifteenK}{3}
+\newcommand{\dimFifteenHandPRBase}{2.527}
+\newcommand{\dimFifteenHandPRDose}{2.661}
+\newcommand{\dimFifteenHandPRDiff}{0.184}
+\newcommand{\dimFifteenHandRE}{2.353}
+\newcommand{\dimFifteenHandRMSIP}{0.952}
+\newcommand{\dimFifteenHandK}{5}
+
+% 20 mg Group
+\newcommand{\dimTwentyPRBase}{1.27}
+\newcommand{\dimTwentyPRDose}{1.33}
+\newcommand{\dimTwentyPRDiff}{0.06}
+\newcommand{\dimTwentyHandPRBase}{2.523}
+\newcommand{\dimTwentyHandPRDose}{2.488}
+\newcommand{\dimTwentyHandPRDiff}{-0.084}
+\newcommand{\dimTwentyRE}{8.24} 
+\newcommand{\dimTwentyHandRE}{3.380}
+\newcommand{\dimTwentyRMSIP}{0.94}
+\newcommand{\dimTwentyHandRMSIP}{0.931}
+\newcommand{\dimTwentyK}{2}
+\newcommand{\dimTwentyHandK}{5}
+
+% All Mean
+\newcommand{\dimAllPRBase}{1.40}
+\newcommand{\dimAllPRDose}{1.41}
+\newcommand{\dimAllPRDiff}{0.02}
+\newcommand{\dimAllHandPRBase}{2.525}
+\newcommand{\dimAllHandPRDose}{2.574}
+\newcommand{\dimAllHandPRDiff}{0.054}
+\newcommand{\dimAllRE}{6.95}
+\newcommand{\dimAllHandRE}{2.866}
+\newcommand{\dimAllRMSIP}{0.95} 
+\newcommand{\dimAllHandRMSIP}{0.942} 
+\newcommand{\dimAllK}{2}
+\newcommand{\dimAllHandK}{5}
